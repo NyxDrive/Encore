@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=MonsterStats
+comment1.params=
+comment1.target=MonsterStats()
+comment2.params=
+comment2.target=void\ showMonsStats()
+comment3.params=
+comment3.target=void\ monsterLvlUp()
+comment4.params=
+comment4.target=void\ resetMonsterStats()
+comment5.params=
+comment5.target=int\ getMonsterHP()
+comment6.params=
+comment6.target=int\ getMonsterAtt()
+comment7.params=
+comment7.target=int\ getMonsterDef()
+comment8.params=newHP
+comment8.target=void\ setMonsterHP(int)
+numComments=9

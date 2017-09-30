@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Game
+comment1.params=stats
+comment1.target=Game(PlayerStats)
+comment2.params=
+comment2.target=void\ playerUP()
+comment3.params=
+comment3.target=void\ gameOver()
+comment4.params=
+comment4.target=void\ runGame()
+comment5.params=
+comment5.target=void\ showStats()
+numComments=6
