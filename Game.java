@@ -17,31 +17,34 @@ public class Game
     private boolean gameOver = false;
     private boolean fightOver = true;
     private PlayerStats pStats;
-    private int choice, killCount;
+    private int choice, levelUpCounter, killCount;
     
     ConsoleIO input = new ConsoleIO();
     MonsterStats mStats = new MonsterStats();
+    BossStats bStats = new BossStats();
+    Occurances oEvents = new Occurances(pStats, bStats);
     Fight mech;
     
     public Game(PlayerStats stats)
     {
         pStats = stats;
         mech = new Fight(pStats, mStats);
-        killCount = 0;
+        levelUpCounter = 0;
     }
     
     public void playerUP()
     {
-        if (killCount == 2)
+        if (levelUpCounter == 2)
         {
             pStats.playerLvlUp();
-            killCount = 0;
+            levelUpCounter = 0;
         }
     }
     
     public void gameOver()
     {
         System.out.println("Congratz LOSER");
+        System.out.println("You have slain " + killCount + " monsters!"); 
     }
     
     public void runGame()
@@ -78,6 +81,7 @@ public class Game
                 if (mStats.getMonsterHP() <= 0)
                 {
                     fightOver = true;
+                    levelUpCounter++;
                     killCount++;
                 }
                 else
@@ -102,7 +106,6 @@ public class Game
                 }
             }
             // Reset Monster Stats
-            // mStats.monsterLvlUp();
             mStats.resetMonsterStats();
         }
     }

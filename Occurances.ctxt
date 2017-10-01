@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Occurances
+comment1.params=pStats\ bStats
+comment1.target=Occurances(PlayerStats,\ BossStats)
+comment2.params=
+comment2.target=void\ genRandEvent()
+comment3.params=
+comment3.target=void\ bossFight()
+numComments=4

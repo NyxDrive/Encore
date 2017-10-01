@@ -14,7 +14,7 @@ import chn.util.*;
 
 public class MonsterStats
 {
-    private int monsHP, monsAtt, monsDef, monsHPUp, monsAttUp, monsDefUp;
+    public int monsHP, monsAtt, monsDef, monsHPUp, monsAttUp, monsDefUp;
     
     public MonsterStats()
     {
