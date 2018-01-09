@@ -11,7 +11,7 @@ import apcslib.*;
 import java.awt.*;
 
 import chn.util.*;
-
+//STUPID CMOMENTSTUPID CMOMENTSTUPID CMOMENTSTUPID CMOMENTSTUPID CMOMENTSTUPID CMOMENTSTUPID CMOMENT
 public class Game
 {
     private boolean gameOver = false;
